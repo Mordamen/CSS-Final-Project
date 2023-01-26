@@ -1,0 +1,185 @@
+.sidebar {
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 0.9em;
+  transition: 0.3s;
+  float: right;
+  position: relative;
+}
+// .sidebar:before {
+//   display: none;
+//   //   position: absolute;
+//   content: "";
+//   z-index: -1;
+//   left: -5%;
+//   top: -48px;
+//   width: 110%;
+//   height: 140px;
+//   background: #fff;
+//   box-shadow: 1px -11px 13px -10px rgba(0, 0, 0, 0.22);
+//   transform: rotate(2.2deg);
+// }
+// .sidebar:after {
+//   display: none;
+//   //   position: absolute;
+//   content: "";
+//   z-index: -1;
+//   // left: -5%;
+//   // bottom: -48px;
+//   width: 110%;
+//   height: 140px;
+//   background: #fff;
+//   box-shadow: 1px 11px 13px -10px rgba(0, 0, 0, 0.25);
+//   transform: rotate(-2.2deg);
+// }
+
+.home .content article .sidebar {
+  margin: -50% auto !important;
+}
+.sidebar .center {
+  width: 290px;
+  border: none;
+  background: #fff;
+  padding-top: 2em;
+  padding-right: 2.2em;
+  padding-bottom: 0.5em;
+  padding-left: 2.2em;
+  box-shadow: 3px 10px 26px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  //   margin-bottom: 1.2em;
+  margin-left: 1em;
+}
+html:not(.home) .sidebar .center.c1 {
+  padding: 2em 1.6em 1.7em 1.6em;
+}
+.sidebar .mayor {
+  height: 315px;
+  width: 220px;
+  //   width: 70px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.28);
+}
+.sidebar p {
+  margin: 10px 3% 1em 3%;
+  text-align: center;
+}
+// .sidebar .weather {
+//   display: block;
+//   position: relative;
+//   margin: 2em 0 0;
+// }
+// // .sidebar .weather:before {
+// // }
+// .sidebar .weather_link {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+// }
+
+@media (max-width: 1250px) {
+  .content article {
+    padding: 20px 5% 20px 3%;
+    max-width: 1200px;
+  }
+  .home .content article .sidebar {
+    right: 4%;
+    width: 260px;
+  }
+}
+
+@media (max-width: 950px) {
+  .sidebar {
+    width: 250px;
+  }
+}
+
+@media (max-width: 900px) {
+  html:not(.home) .sidebar {
+    position: relative;
+    margin-top: 0;
+    width: 100%;
+    max-width: 100%;
+    background: #fff;
+    margin: 8em auto 7em auto !important;
+    padding: 0.9em 1.2em;
+    box-shadow: none;
+  }
+  html:not(.home) .sidebar:before,
+  html:not(.home) .sidebar:after {
+    display: block;
+  }
+  html:not(.home) .sidebar .center {
+    max-width: 300px;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: none;
+  }
+  html:not(.home) .sidebar .center.c1 {
+    max-width: 700px;
+  }
+  html:not(.home) .sidebar .centerADS {
+    max-width: 700px;
+  }
+  html:not(.home) .sidebar .centerADS .google_side_ads {
+    max-width: 700px;
+  }
+  .sidebar .weather {
+    margin: 4em 0 0;
+  }
+  html:not(.home) .ad2 {
+    padding: 0 4%;
+  }
+  html:not(.home) .sidebar .google_side_ads {
+    display: none;
+  }
+  html:not(.home) .sidebar hr {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .home .content article .sidebar {
+    right: 4%;
+    width: 260px;
+  }
+}
+
+@media (max-width: 630px) {
+  .home .content article .sidebar {
+    position: relative;
+    z-index: 0;
+    right: inherit !important;
+    top: 0% !important;
+    width: 100% !important;
+    max-width: 100%;
+    background: #fff;
+    margin: 9em auto 0 auto !important;
+    padding: 0.9em 1.2em;
+    box-shadow: none;
+  }
+  .home .sidebar:before,
+  .home .sidebar:after {
+    display: block;
+  }
+  .home .sidebar:after {
+    transform: rotate(2.2deg);
+    box-shadow: 1px 11px 13px -10px rgba(0, 0, 0, 0.5);
+    transform: rotate(2.2deg);
+  }
+  .home .sidebar .center {
+    max-width: 300px;
+    margin: 0 auto;
+    background: transparent;
+    box-shadow: none;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .paradeInt .sidebar h3 {
+    margin: 0 0 20px;
+  }
+}

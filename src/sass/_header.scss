@@ -1,0 +1,32 @@
+header {
+  // background-image: url(/public/assets/images/navbarBackground.png);
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center; /* Center the image */
+  // background-size: 100vw;
+  // Other
+  width: 100vw;
+  // display: inline-grid;
+  // grid-template-columns: auto auto auto;
+  // box-shadow: 1px 1px 10px #5f583c;
+  background-color: transparent !important;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.17);
+}
+
+.bg-body-tertiary {
+  background-color: transparent !important;
+}
+
+// #header {
+//   background-color: none !important;
+// }
+
+.heading {
+  background-image: url(/public/assets/images/aboutHeader.webp);
+  height: 470px;
+}
+
+#test {
+  height: 350px;
+}

@@ -1,0 +1,58 @@
+footer {
+  background: url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xfooter.jpg.pagespeed.ic.QEkTHJ1XSi.jpg)
+    center no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: fit-content;
+}
+footer .center {
+  max-width: 1336px;
+  padding: 7.8em 3% 6.5em;
+  margin: 0 auto;
+}
+footer p {
+  font-size: 1.1em;
+  line-height: 1.2em;
+  color: #fff;
+}
+footer a.external {
+  display: inline-block;
+  width: 232px;
+  background: #fdf8e5;
+  color: #484847;
+  text-shadow: none;
+  text-decoration: none !important;
+  padding: 0 0.7em;
+  border-radius: 3px;
+  margin: 0.6em 7px 0;
+  line-height: 0.8em;
+  transition: 0.3s;
+}
+footer a.external img {
+  width: 100%;
+  max-width: 155px;
+  height: auto;
+}
+
+.diagonalEnd {
+  position: relative;
+  z-index: 1;
+  left: -5%;
+  top: -48px;
+  width: 110%;
+  height: 85px;
+  background: #fdf8e5;
+  box-shadow: 1px -11px 13px -10px rgba(0, 0, 0, 0.5);
+  transform: rotate(-2.2deg);
+}
+.diagonalStart {
+  position: relative;
+  z-index: 1;
+  left: -5%;
+  bottom: -48px;
+  width: 110%;
+  height: 100px;
+  background: #fdf8e5;
+  box-shadow: 1px 11px 13px -10px rgba(0, 0, 0, 0.5);
+  transform: rotate(2.2deg);
+}

@@ -1,0 +1,62 @@
+@keyframes rotateSunbeam {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes stripeGreen {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(0deg);
+  }
+  100% {
+  }
+}
+@keyframes stripeGreen {
+  0% {
+    transform: rotate(-0.2deg);
+  }
+  20% {
+    transform: rotate(-0.2deg);
+  }
+  100% {
+  }
+}
+@-webkit-keyframes stripeGold {
+  0% {
+    transform: rotate(-0.3deg);
+  }
+  10% {
+    transform: rotate(-0.3deg);
+  }
+  100% {
+  }
+}
+@keyframes stripeGold {
+  0% {
+    transform: rotate(-0.3deg);
+  }
+  10% {
+    transform: rotate(-0.3deg);
+  }
+  100% {
+  }
+}
+@-webkit-keyframes stripePurple {
+  0% {
+    transform: rotate(-0.7deg);
+  }
+  100% {
+  }
+}
+@keyframes stripePurple {
+  0% {
+    transform: rotate(-0.7deg);
+  }
+  100% {
+  }
+}

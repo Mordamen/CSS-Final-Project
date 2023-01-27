@@ -15,8 +15,16 @@
   }
 }
 
+.rounded {
+  height: 150px;
+  width: 200px;
+  // Circle Corners:
+  // border-radius: 200px !important; //circle corner
+  // height: 200px;
+}
+
 iframe {
-  border-radius: 10px;
+  border-radius: 10px; //rounded corners
   height: 150px;
   width: 200px;
 }

@@ -389,7 +389,7 @@ header {
   }
 }
 nav {
-  position: absolute;
+  position: absolute !important;
   z-index: 5;
   left: 0;
   width: 99.9%;
@@ -3567,7 +3567,7 @@ ul.parades li:hover .route i {
 .first {
   float: left;
   width: 67%;
-  background: #ecca34;
+  // background: #ecca34;
 }
 .first h3 {
   text-shadow: 2px 2px 1px #fdf8e5, 0 2px 1px #fdf8e5, 2px 0 1px #fdf8e5;

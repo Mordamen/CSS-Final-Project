@@ -37,3 +37,14 @@ body::-webkit-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.first {
+  background-image: url(/assets/images/background.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Center the image */
+  background-size: 100vw 100vh;
+}
+
+.second {
+}

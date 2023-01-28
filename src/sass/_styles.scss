@@ -1050,121 +1050,7 @@ nav > ul > li ul li:hover a:after {
     padding: 0 2% 10px 2%;
   }
 }
-.overlay {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  position: absolute;
-  z-index: 3;
-  left: 50%;
-  top: 0%;
-  margin: 0 0 0 294px;
-  width: 240px;
-  height: 100%;
-  text-align: center;
-  transition: 0.6s;
-}
-.overlay a {
-  position: relative;
-  width: 11.1em;
-  height: 11.1em;
-  display: inline-block;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.59);
-}
-.overlay a #star {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -750px 0 0 -750px;
-  display: block;
-  width: 1500px;
-  height: 1500px;
-  opacity: 0.7;
-  pointer-events: none;
-  transition: 0.6s;
-  background: url(https://www.mardigrasneworleans.com/templates/client/imagesNew/start2.png.pagespeed.ce.eJ-3YyMAoo.png)
-    no-repeat center;
-  animation: rotateSunbeam 130s linear infinite 2s;
-  will-change: transform, opacity;
-}
-.overlay a #outter {
-  font-size: 1em;
-  position: absolute;
-  margin: 0.23em;
-  width: 10.64em;
-  height: 10.64em;
-  border-radius: 50%;
-  background: #59258e
-    url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xcolorwheel.png.pagespeed.ic.67t0nvuILD.png)
-    no-repeat center;
-  transition: 0.6s;
-}
-.overlay a .inner {
-  position: relative;
-  width: 10em;
-  height: 10em;
-  margin: 0.54em;
-  border-radius: 50%;
-  text-align: center;
-  background: #fff
-    url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xscheduleCTA.jpg.pagespeed.ic.yJXQyGrvN8.jpg)
-    center;
-  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.48);
-  transform: rotate(-18deg);
-}
-.overlay a .inner span {
-  display: block;
-  font-family: "Lobster", cursive;
-  color: #2a292b;
-  line-height: 1.1em;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.32);
-}
-.overlay a .inner span:nth-child(1) {
-  padding-top: 1em;
-}
-.overlay a .inner span:nth-child(2) {
-  color: #3f940c;
-  font-size: 2.3em;
-  line-height: 1em;
-}
-.overlay a .inner span:nth-child(3) {
-  font-size: 1.8em;
-}
-.overlay a .inner span:nth-child(4) {
-  font-size: 1.4em;
-}
-.overlay a:hover #star {
-  opacity: 1;
-}
-.overlay a:hover #outter {
-  box-shadow: 0 0 17px white, 0 0 30px white, 0 0 70px white, 0 0 160px white;
-}
-@media (max-width: 1250px) {
-  .home .overlay {
-    left: inherit;
-    right: 6% !important;
-    top: 0%;
-    margin-left: 0;
-  }
-  .home .overlay {
-    right: 7%;
-  }
-  html:not(.home) .overlay {
-    right: 6%;
-    left: inherit;
-  }
-}
-@media (max-width: 950px) {
-  .overlay {
-    right: 6%;
-  }
-  html:not(.home) .overlay {
-    right: 4%;
-  }
-}
+
 .happy {
   font-size: 1em;
   font-family: "Lobster", cursive;
@@ -3564,28 +3450,28 @@ ul.parades li:hover .route i {
   margin: 0;
   font-size: 0.9em;
 }
-.first {
-  float: left;
-  width: 67%;
-  // background: #ecca34;
-}
-.first h3 {
-  text-shadow: 2px 2px 1px #fdf8e5, 0 2px 1px #fdf8e5, 2px 0 1px #fdf8e5;
-}
-.second {
-  float: left;
-  width: 31%;
-  background: #dad8d0;
-}
-.second h3 {
-  font-size: 1.6em !important;
-  top: -37px !important;
-  text-shadow: 1px 1px 1px #fdf8e5, 0 1px 1px #fdf8e5, 1px 0 1px #fdf8e5;
-}
-.second i {
-  font-size: 1.5em;
-  margin-top: 0 !important;
-}
+// .first {
+//   float: left;
+//   width: 67%;
+//   // background: #ecca34;
+// }
+// .first h3 {
+//   text-shadow: 2px 2px 1px #fdf8e5, 0 2px 1px #fdf8e5, 2px 0 1px #fdf8e5;
+// }
+// .second {
+//   float: left;
+//   width: 31%;
+//   background: #dad8d0;
+// }
+// .second h3 {
+//   font-size: 1.6em !important;
+//   top: -37px !important;
+//   text-shadow: 1px 1px 1px #fdf8e5, 0 1px 1px #fdf8e5, 1px 0 1px #fdf8e5;
+// }
+// .second i {
+//   font-size: 1.5em;
+//   margin-top: 0 !important;
+// }
 @media screen and (max-width: 590px) {
   .prizeWinners > div {
     width: 100%;

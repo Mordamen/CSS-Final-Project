@@ -1,11 +1,11 @@
 html,
 body {
-  height: 100vh;
+  height: 100vh !important;
 }
 body {
   /* background-color: #000; */
-  font-size: 18px;
-  font-weight: 300;
+  /* font-size: 18px; */
+  /* font-weight: 300; */
 }
 .panel {
   position: fixed;
@@ -47,4 +47,11 @@ body::-webkit-scrollbar {
 }
 
 .second {
+}
+
+#gsap-marker-start
+  #gsap-marker-end
+  #gsap-marker-scroller-start
+  #gsap-marker-scroller-end {
+  display: none !important;
 }

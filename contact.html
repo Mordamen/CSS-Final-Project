@@ -107,7 +107,7 @@
             type="text"
             class="form-control"
             id="validationCustom01"
-            value="Mark"
+            value="First Name"
             required
           />
           <div class="valid-feedback">Looks good!</div>
@@ -118,54 +118,37 @@
             type="text"
             class="form-control"
             id="validationCustom02"
-            value="Otto"
+            value="Last name"
             required
           />
           <div class="valid-feedback">Looks good!</div>
         </div>
         <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label"
-            >Username</label
-          >
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input
-              type="text"
-              class="form-control"
-              id="validationCustomUsername"
-              aria-describedby="inputGroupPrepend"
-              required
-            />
-            <div class="invalid-feedback">Please choose a username.</div>
+          <label for="validationCustom02" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            value="2"
+            required
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
           </div>
+          <div class="valid-feedback">Looks good!</div>
         </div>
-        <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
-          <input
-            type="text"
+        <div class="mb-3">
+          <label for="validationTextarea" class="form-label">Textarea</label>
+          <textarea
             class="form-control"
-            id="validationCustom03"
+            id="validationTextarea"
+            placeholder="Required example textarea"
             required
-          />
-          <div class="invalid-feedback">Please provide a valid city.</div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div class="invalid-feedback">Please select a valid state.</div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
-          <input
-            type="text"
-            class="form-control"
-            id="validationCustom05"
-            required
-          />
-          <div class="invalid-feedback">Please provide a valid zip.</div>
+          ></textarea>
+          <div class="invalid-feedback">
+            Please enter a message in the textarea.
+          </div>
         </div>
         <div class="col-12">
           <div class="form-check">

@@ -1,3 +1,11 @@
+function removeAnnoyingText() {
+  $(
+    ".gsap - marker - start",
+    ".gsap - marker - end",
+    ".gsap - marker - scroller - start",
+    ".gsap - marker - scroller - end"
+  ).empty();
+}
 // -----------------
 let sections = gsap.utils.toArray("section"),
   currentSection = sections[0];
@@ -29,14 +37,5 @@ function setSection(newSection) {
     tl.from("h1", { x: -300, duration: 0.3 });
     currentSection = newSection;
   }
+  removeAnnoyingText();
 }
-function removeAnnoyingText() {
-  $(
-    ".gsap - marker - start",
-    ".gsap - marker - end",
-    ".gsap - marker - scroller - start",
-    ".gsap - marker - scroller - end"
-  ).empty();
-}
-
-window.onload = removeAnnoyingText();

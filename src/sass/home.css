@@ -2,11 +2,7 @@ html,
 body {
   height: 100vh !important;
 }
-body {
-  /* background-color: #000; */
-  /* font-size: 18px; */
-  /* font-weight: 300; */
-}
+
 .panel {
   position: fixed;
   width: 100vw;

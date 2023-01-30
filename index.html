@@ -89,6 +89,9 @@
     <main>
       <!-- partial:index.partial.html -->
       <section class="first panel">
+        <a class="book animated flipInX" style="animation-delay: 2.4s"
+          >BOOK HOTEL <i class="fas fa-map-marker-alt"></i
+        ></a>
         <div class="overlay">
           <a
             href="/contest/"
@@ -110,7 +113,109 @@
           <div class="arrow"></div>
         </div>
       </section>
-      <section class="second panel"><h1>This is a second section</h1></section>
+      <section class="second panel">
+        <h1
+          class="mt-12 mb-8 px-6 text-center text-lg md:text-2xl font-semibold"
+        >
+          Stripe inspired carousel
+        </h1>
+
+        <div
+          id="logoCarousel"
+          class="carousel w-10/12 max-w-5xl mx-auto text-lg shadow-2xl"
+        >
+          <div class="carousel__image-container">
+            <ul>
+              <li data-for="0" class="is-active">
+                <h3 class="text-xl md:text-4xl font-semibold">Vivamus</h3>
+                <img alt="" src="https://lipsum.app/id/2/460x320" />
+              </li>
+              <li data-for="1">
+                <h3 class="text-xl md:text-4xl font-semibold">Ut semper</h3>
+                <img alt="" src="https://lipsum.app/id/3/460x320" />
+              </li>
+              <li data-for="2">
+                <h3 class="text-xl md:text-4xl font-semibold">Dolor amet</h3>
+                <img alt="" src="https://lipsum.app/id/4/460x320" />
+              </li>
+              <li data-for="3">
+                <h3 class="text-xl md:text-4xl font-semibold">Sed blandit</h3>
+                <img alt="" src="https://lipsum.app/id/5/460x320" />
+              </li>
+            </ul>
+          </div>
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <div class="carousel__slide">
+                <h3
+                  class="mb-3 text-xl font-semibold uppercase text-indigo-500"
+                >
+                  Lorem ipsum
+                </h3>
+                <p class="text-lg leading-8">
+                  Dolor sit amet, consectetur adipiscing elit. Ut semper, justo
+                  eget vehicula vestibulum, enim enim suscipit lectus, et
+                  sagittis nibh risus vel metus. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                </p>
+              </div>
+              <div class="carousel__slide">
+                <h3
+                  class="mb-3 text-xl font-semibold uppercase text-indigo-500"
+                >
+                  Aliquet dictum
+                </h3>
+                <p class="text-lg leading-8">
+                  Vivamus massa justo, sagittis non viverra sed, sodales non
+                  nisi. Nunc semper, massa a aliquet dictum, enim nisi malesuada
+                  orci, et elementum lectus turpis et velit.
+                </p>
+              </div>
+              <div class="carousel__slide">
+                <h3
+                  class="mb-3 text-xl font-semibold uppercase text-indigo-500"
+                >
+                  Nunc nec nibh nibh
+                </h3>
+                <p class="text-lg leading-8">
+                  Duis dolor orci, viverra ut finibus sed, aliquet vitae tortor.
+                  Proin sodales ipsum ac ipsum hendrerit tempus. Nunc nec nibh
+                  nibh. Aenean consequat auctor posuere.
+                </p>
+              </div>
+              <div class="carousel__slide">
+                <h3
+                  class="mb-3 text-xl font-semibold uppercase text-indigo-500"
+                >
+                  Sed blandit nibh
+                </h3>
+                <p class="text-lg leading-8">
+                  Duis dignissim magna in mattis pulvinar. Sed blandit nibh quis
+                  arcu ornare, sit amet fermentum nisi rhoncus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul
+          id="logoBar"
+          class="w-10/12 max-w-5xl mx-auto grid grid-cols-4 gap-4 text-lg md:text-2xl text-gray-600 font-semibold"
+        >
+          <li class="py-8 text-center">
+            <a class="cursor-pointer is-active" data-for="0">Vivamus</a>
+          </li>
+          <li class="py-8 text-center">
+            <a class="cursor-pointer" data-for="1">Ut semper</a>
+          </li>
+          <li class="py-8 text-center">
+            <a class="cursor-pointer" data-for="2">Dolor amet</a>
+          </li>
+          <li class="py-8 text-center">
+            <a class="cursor-pointer" data-for="3">Sed blandit</a>
+          </li>
+        </ul>
+      </section>
       <section class="third panel">
         <h1>These sections just keep coming</h1>
       </section>
@@ -212,80 +317,5 @@
   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=5426"></script>
   <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script> -->
   <script src="./src/javascript/scrollFading.js"></script>
+  <script src="./src/javascript/carousel.js"></script>
 </html>
-
-<!-- <section class="dynamic-headers clearfix">
-        <ul class="rslides home_slides clearfix rslides1">
-          <li
-            id="rslides1_s0"
-            class="rslides1_on"
-            style="
-              display: block;
-              float: left;
-              position: relative;
-              opacity: 1;
-              z-index: 2;
-              transition: opacity 500ms ease-in-out 0s;
-            "
-          >
-            <img
-              src="./assets/images/background.webp"
-              width="1600"
-              height="726"
-              alt="header banner"
-            />
-          </li>
-        </ul>
-        <a class="book animated flipInX" style="animation-delay: 2.4s"
-          >BOOK HOTEL <i class="fas fa-map-marker-alt"></i
-        ></a>
-        <div class="overlay">
-          <div
-            id="MardiGrasCountdown"
-            class="is-countdown"
-            data-mg-timestamp="1676959200"
-          >
-            <strong>DAYS ‘TIL MARDI GRAS</strong>
-            <span class="countdown-row countdown-show4">
-              <span class="countdown-section"
-                ><span class="countdown-amount"></span
-                ><span class="countdown-period">Days</span></span
-              >
-              <span class="countdown-section"
-                ><span class="countdown-amount"></span
-                ><span class="countdown-period">Hours</span></span
-              >
-              <span class="countdown-section"
-                ><span class="countdown-amount"></span
-                ><span class="countdown-period">Mins</span></span
-              >
-              <span class="countdown-section"
-                ><span class="countdown-amount"></span
-                ><span class="countdown-period">Secs</span></span
-              >
-            </span>
-          </div>
-
-          <a
-            href="/contest/"
-            class="animated flipInY"
-            style="animation-delay: 1s"
-          >
-            <div id="star"></div>
-            <div id="outter"></div>
-            <div class="inner">
-              <span>2023</span>
-              <span>Photo Contest</span>
-              <span>Enter</span>
-            </div>
-          </a>
-        </div>
-      </section>
-      <div class="stripes">
-        <a class="middle">
-          <div class="green"><h1>Mardi Gras New Orleans</h1></div>
-          <div class="gold">&nbsp;</div>
-          <div class="purple"><span>&nbsp;THE PARTY STARTS HERE!</span></div>
-        </a>
-        <div class="diagonal"></div>
-      </div> -->

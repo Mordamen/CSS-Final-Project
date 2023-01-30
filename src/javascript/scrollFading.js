@@ -750,47 +750,47 @@
     }
     return e;
   }
-  // function wb(e, t, r, n, o, i, a, s) {
-  //   var l = o.startColor,
-  //     c = o.endColor,
-  //     u = o.fontSize,
-  //     f = o.indent,
-  //     p = o.fontWeight,
-  //     d = He.createElement("div"),
-  //     g = Fa(r) || "fixed" === z(r, "pinType"),
-  //     h = -1 !== e.indexOf("scroller"),
-  //     v = g ? Ge : r,
-  //     b = -1 !== e.indexOf("start"),
-  //     m = b ? l : c,
-  //     y =
-  //       "border-color:" +
-  //       m +
-  //       ";font-size:" +
-  //       u +
-  //       ";color:" +
-  //       m +
-  //       ";font-weight:" +
-  //       p +
-  //       ";pointer-events:none;white-space:nowrap;font-family:sans-serif,Arial;z-index:1000;padding:4px 8px;border-width:0;border-style:solid;";
-  //   return (
-  //     (y += "position:" + ((h || s) && g ? "fixed;" : "absolute;")),
-  //     (!h && !s && g) ||
-  //       (y += (n === Ne ? S : T) + ":" + (i + parseFloat(f)) + "px;"),
-  //     a &&
-  //       (y +=
-  //         "box-sizing:border-box;text-align:left;width:" +
-  //         a.offsetWidth +
-  //         "px;"),
-  //     (d._isStart = b),
-  //     d.setAttribute("class", "gsap-marker-" + e + (t ? " marker-" + t : "")),
-  //     (d.style.cssText = y),
-  //     (d.innerText = t || 0 === t ? e + "-" + t : e),
-  //     v.children[0] ? v.insertBefore(d, v.children[0]) : v.appendChild(d),
-  //     (d._offset = d["offset" + n.op.d2]),
-  //     q(d, 0, n, b),
-  //     d
-  //   );
-  // }
+  function wb(e, t, r, n, o, i, a, s) {
+    var l = o.startColor,
+      c = o.endColor,
+      u = o.fontSize,
+      f = o.indent,
+      p = o.fontWeight,
+      d = He.createElement("div"),
+      g = Fa(r) || "fixed" === z(r, "pinType"),
+      h = -1 !== e.indexOf("scroller"),
+      v = g ? Ge : r,
+      b = -1 !== e.indexOf("start"),
+      m = b ? l : c,
+      y =
+        "border-color:" +
+        m +
+        ";font-size:" +
+        u +
+        ";color:" +
+        m +
+        ";font-weight:" +
+        p +
+        ";pointer-events:none;white-space:nowrap;font-family:sans-serif,Arial;z-index:1000;padding:4px 8px;border-width:0;border-style:solid;";
+    return (
+      (y += "position:" + ((h || s) && g ? "fixed;" : "absolute;")),
+      (!h && !s && g) ||
+        (y += (n === Ne ? S : T) + ":" + (i + parseFloat(f)) + "px;"),
+      a &&
+        (y +=
+          "box-sizing:border-box;text-align:left;width:" +
+          a.offsetWidth +
+          "px;"),
+      (d._isStart = b),
+      d.setAttribute("class", "gsap-marker-" + e + (t ? " marker-" + t : "")),
+      (d.style.cssText = y),
+      // (d.innerText = t || 0 === t ? e + "-" + t : e),
+      v.children[0] ? v.insertBefore(d, v.children[0]) : v.appendChild(d),
+      (d._offset = d["offset" + n.op.d2]),
+      q(d, 0, n, b),
+      d
+    );
+  }
   function Bb() {
     return 34 < dt() - gt && (w = w || requestAnimationFrame(j));
   }
@@ -1521,9 +1521,9 @@
               (L = wb("scroller-end", a, be, he, e, 0, D)),
               (t = D["offset" + he.op.d2]);
             var f = J(z(be, "content") || be);
-            (A = this.markerStart = wb("start", a, f, he, e, t, 0, pe)),
-              (B = this.markerEnd = wb("end", a, f, he, e, t, 0, pe)),
-              pe && (S = Je.quickSetter([A, B], he.a, Ct)),
+            // (A = this.markerStart = wb("start", a, f, he, e, t, 0, pe)),
+            //   (B = this.markerEnd = wb("end", a, f, he, e, t, 0, pe)),
+            pe && (S = Je.quickSetter([A, B], he.a, Ct)),
               ye ||
                 (qe.length && !0 === z(be, "fixedMarkers")) ||
                 ((function _makePositionable(e) {

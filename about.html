@@ -17,6 +17,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
     <!-- <script src="https://cdn.jsdelivr.net/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.responsiveslides/1.54/responsiveslides.min.js"></script> -->
@@ -27,6 +28,10 @@
       src="https://kit.fontawesome.com/260ebca87b.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -100,8 +105,9 @@
     </section>
 
     <!-- --------------------- ABOUT SECTION --------------------- -->
-    <section class="content">
+    <section class="container content">
       <section>
+        <h2>The Origins of Mardi Gras</h2>
         <p>
           The origins of Mardi Gras can be traced to medieval Europe, passing
           through Rome and Venice in the 17th and 18th centuries to the French
@@ -139,6 +145,28 @@
           Perseverance Benevolent & Mutual Aid Association was the first of
           hundreds of clubs and carnival organizations formed in New Orleans.
         </p>
+        <div class="sidebar animated fadeIn" style="animation-delay: 1.2s">
+          <div class="outline first">
+            <div class="gallery">
+              <div class="pic-gallery float">
+                <a
+                  data-fancybox="gallery"
+                  href="https://i.imgur.com/qB5iUik.jpg"
+                >
+                  <img class="rounded" src="https://i.imgur.com/qB5iUik.jpg" />
+                </a>
+              </div>
+            </div>
+            <!-- <img
+              class="float"
+              src="/assets/images/cayetano-gil-T0tb5Olqkis-unsplash.jpg"
+              alt="vintage - from the 60's"
+            /> -->
+            <p>
+              <a>A Mardi Gras Float</a>
+            </p>
+          </div>
+        </div>
         <p>
           By the late 1830s, New Orleans held street processions of maskers with
           carriages and horseback riders to celebrate Mardi Gras. Dazzling
@@ -199,13 +227,12 @@
       <hr />
       <section>
         <div class="sidebar animated fadeIn" style="animation-delay: 1.2s">
-          <div class="center">
+          <div class="outline second">
             <img
               class="mayor"
               src="/assets/images/PopTech-_LaToya_Cantrell_(cropped).jpg"
               alt="mardigras mayor"
             />
-            <!-- <span class="flag" style="width: 70px"></span> -->
             <p>
               <a href="https://en.wikipedia.org/wiki/LaToya_Cantrell"
                 >LaToya Cantrell, Mayor of New Orleans</a

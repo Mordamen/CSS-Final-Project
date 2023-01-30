@@ -3,7 +3,6 @@
   text-align: center;
   font-size: 0.9em;
   transition: 0.3s;
-  float: right;
   position: relative;
 }
 // .sidebar:before {
@@ -36,30 +35,48 @@
 .home .content article .sidebar {
   margin: -50% auto !important;
 }
-.sidebar .center {
-  width: 290px;
+.sidebar .outline {
+  // float: right;
   border: none;
   background: #fff;
-  padding-top: 2em;
-  padding-right: 2.2em;
-  padding-bottom: 0.5em;
-  padding-left: 2.2em;
   box-shadow: 3px 10px 26px -5px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  //   margin-bottom: 1.2em;
-  margin-left: 1em;
 }
 html:not(.home) .sidebar .center.c1 {
   padding: 2em 1.6em 1.7em 1.6em;
 }
+.sidebar .first {
+  padding-top: 1em;
+  padding-right: 1em;
+  // padding-bottom: 0.5em;
+  padding-left: 1em;
+  float: left;
+  margin-right: 1em;
+}
+
+.sidebar .second {
+  padding-top: 2em;
+  padding-right: 2.2em;
+  padding-bottom: 0.5em;
+  padding-left: 2.2em;
+  float: right;
+  margin-left: 1em;
+}
 .sidebar .mayor {
   height: 315px;
   width: 220px;
-  //   width: 70px;
-  height: auto;
+  border-radius: 3px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.28);
+  margin-bottom: 1rem;
+}
+
+.sidebar .float {
+  height: auto !important;
+  width: 300px !important;
   border-radius: 3px;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.28);
 }
+
 .sidebar p {
   margin: 10px 3% 1em 3%;
   text-align: center;

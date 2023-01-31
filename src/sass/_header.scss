@@ -1,12 +1,21 @@
 header {
-  width: 100vw;
+  // width: 100vw;
   // display: inline-grid;
   // grid-template-columns: auto auto auto;
   // box-shadow: 1px 1px 10px #5f583c;
   background-color: transparent !important;
-  position: absolute;
-  background: rgba(0, 0, 0, 0.17);
-  top: 0;
+  // position: absolute;
+  // background: rgba(0, 0, 0, 0.17);
+  // top: 0;
+}
+
+nav {
+  position: absolute !important;
+  z-index: 5;
+  left: 0;
+  width: 100vw;
+  margin-top: -0.2em;
+  //   box-shadow: 1px 1px 11px rgba(0, 0, 0, 0.24);
 }
 
 .bg-body-tertiary {
@@ -44,4 +53,307 @@ header {
   min-height: 360px;
   max-height: 470px;
   object-position: center;
+}
+
+ul.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+ul.rslides li {
+  // -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+ul.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+ul.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+.stripes {
+  position: relative;
+  margin-top: -9.9em;
+  padding: 6em 15% 12em 0;
+  width: 100%;
+  z-index: 3;
+  height: 100px;
+  color: #fff;
+  overflow: hidden;
+  pointer-events: none;
+  transition: 0.3s;
+}
+.stripes .middle {
+  display: block;
+  margin-left: -2%;
+  width: 110%;
+}
+.stripes a div {
+  transition: 0.3s;
+}
+.stripes .green {
+  margin-top: 2.1em;
+  background: #42990e
+    url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xgreen_bar.jpg.pagespeed.ic.pStel7pm_I.jpg);
+  transform: rotate(6.4deg);
+  font-family: "Lobster", cursive;
+  font-size: 2.2em;
+  border-top: 2px solid #8dcc8d;
+  transform-origin: bottom right;
+  border-radius: 0 0 290px 0;
+  animation: stripeGreen 0.9s ease-out 1;
+  -webkit-animation: stripeGreen 0.9s ease-out 1;
+}
+.stripes .gold {
+  position: relative;
+  margin-top: -7em;
+  background: #e1bd29
+    url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xgold_bar.jpg.pagespeed.ic.YNJbxAxOqA.jpg);
+  transform: rotate(2.8deg);
+  padding: 14px 0;
+  border-top: 2px solid #f9e382;
+  box-shadow: 0 3px 42px -4px rgba(0, 0, 0, 0.87);
+  transform-origin: bottom right;
+  animation: stripeGold 0.9s ease-out 1;
+  -webkit-animation: stripeGold 0.9s ease-out 1;
+}
+.stripes .purple {
+  margin-top: -2.7em;
+  background: #8849c2
+    url(https://www.mardigrasneworleans.com/templates/client/imagesNew/xpurple2-bar.jpg.pagespeed.ic.uTw2MJSe2B.jpg);
+  transform: rotate(1.3deg);
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1em;
+  padding: 0.6em 2% 3em;
+  box-shadow: 0 -6px 27px -4px rgba(0, 0, 0, 0.7);
+  border-top: 2px solid #8c5bbd;
+  transform-origin: bottom right;
+  animation: stripePurple 0.6s ease-out 1;
+  -webkit-animation: stripePurple 0.6s ease-out 1;
+}
+.stripes .green:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: #1bb11b;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.stripes .gold:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: #f3d659;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.stripes .purple:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: #a25ce2;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.stripes div > span,
+.stripes div h1 {
+  display: block;
+  max-width: 1056px;
+  margin: 0 auto;
+  color: #fff;
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.48);
+  transition: 0.3s;
+}
+.stripes .green > span,
+.stripes .green h1 {
+  padding: 0 245px 2.2em 2%;
+  transform: rotate(-1.7deg);
+  line-height: 0.9em;
+  font-size: 1em;
+  font-family: "Lobster", cursive;
+}
+.stripes .purple > span {
+  position: relative;
+  margin-top: -0.5em;
+  line-height: 1.1em;
+  padding: 0 2% 0.5em 2.2%;
+  transform: rotate(-1.6deg);
+  transform: rotate(-1.7deg);
+}
+.stripes .purple i {
+  position: absolute;
+  top: 0.2em;
+  padding-left: 22px;
+  font-size: 1.2em;
+  opacity: 0.5;
+  text-shadow: none;
+}
+.stripes .diagonal {
+  position: absolute;
+  left: -5%;
+  bottom: -28px;
+  width: 110%;
+  height: 140px;
+  background: #fdf8e5;
+  box-shadow: 1px -11px 13px -10px rgba(0, 0, 0, 0.5);
+  transform: rotate(-2.2deg);
+}
+@media (min-width: 2000px) {
+  .stripes .green {
+    transform: rotate(4.3deg) !important;
+  }
+  .stripes .gold {
+    transform: rotate(1.9deg) !important;
+  }
+  .stripes .purple {
+    transform: rotate(1deg) !important;
+  }
+}
+@media (min-width: 2300px) {
+  .stripes .green {
+    transform: rotate(4.1deg) !important;
+  }
+  .stripes .gold {
+    transform: rotate(1.9deg) !important;
+  }
+  .stripes .purple {
+    transform: rotate(1.2deg) !important;
+    padding: 0.6em 2% 3.8em;
+  }
+}
+@media (min-width: 1460px) {
+  .stripes .green {
+    transform: rotate(5.3deg);
+  }
+  .stripes .gold {
+    transform: rotate(2.5deg);
+  }
+}
+@media (max-width: 1100px) {
+  .stripes {
+    z-index: 3;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: -10.3em;
+    padding: 6em 15% 53px 0;
+    height: inherit;
+  }
+  .stripes .middle {
+    transform: rotate(1.4deg);
+    margin-left: -3.1%;
+    width: 122%;
+  }
+  .stripes .green {
+    margin-top: 1.3em;
+    transform: rotate(4.6deg);
+  }
+  .stripes .gold {
+    margin-top: -5.3em;
+    transform: rotate(2.6deg);
+  }
+  .stripes .purple {
+    margin-top: -3.2em;
+    transform: rotate(0.4deg);
+  }
+  .stripes .green > span,
+  .stripes .green h1 {
+    padding: 0 36% 2.1em 5%;
+    max-width: 1306px;
+    transform: rotate(-1.5deg);
+  }
+  .stripes .purple > span {
+    transform: rotate(-1.7deg);
+    padding: 0 2% 0.5em 4%;
+    max-width: 1306px;
+  }
+  .stripes .diagonal {
+    bottom: -33px;
+    transform: rotate(-1deg);
+    bottom: 0;
+    height: 111px;
+  }
+}
+@media (max-width: 810px) {
+  .stripes .green h1 {
+    padding: 0 5% 2.1em 5%;
+  }
+}
+@media (max-width: 720px) {
+  .stripes {
+    padding: 6em 15% 42px 0;
+  }
+  .stripes .middle {
+    transform: rotate(-3.4deg);
+    margin-left: -5.1%;
+    width: 126%;
+  }
+  .stripes .green {
+    margin-top: 0.6em;
+    transform: rotate(6.5deg);
+    border-radius: 0;
+  }
+  .stripes .green > span,
+  .stripes .green h1 {
+    transform: rotate(-0.7deg);
+    padding: 0.1em 6% 2em;
+  }
+  .stripes .gold {
+    margin-top: -4.6em;
+    transform: rotate(4.3deg);
+  }
+  .stripes .purple {
+    margin-top: -2.3em;
+    margin-top: -1.9em;
+    transform: rotate(3.3deg);
+  }
+  .stripes .purple > span {
+    transform: rotate(-0.9deg);
+    padding: 0.4em 2% 0.5em 5%;
+  }
+  .stripes .purple i {
+    padding: 0.38em 2% 0 3%;
+    font-size: 1.2em;
+  }
+  .stripes .diagonal {
+    bottom: -38px;
+    transform: rotate(-2deg);
+    bottom: 0;
+    height: 112px;
+  }
+}
+@media (max-width: 500px) {
+  .stripes {
+    padding: 6em 15% 48px 0;
+  }
+  .stripes .green > span,
+  .stripes .green h1 {
+    padding: 0.1em 7% 2.2em;
+    font-size: 0.9em;
+  }
+  .stripes .purple span {
+    padding-top: 0.4em;
+  }
 }

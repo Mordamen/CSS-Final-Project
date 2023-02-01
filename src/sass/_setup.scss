@@ -78,6 +78,20 @@ hr:after {
   scrollbar-width: none; /* Firefox */
 }
 
+.wrapper {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.diagonal {
+  --skew-angle: -5deg;
+  --background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
+
+  position: relative;
+  isolation: isolate;
+}
+
 .clearfix:before {
   content: " ";
   display: table;

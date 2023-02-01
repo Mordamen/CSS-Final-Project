@@ -44,7 +44,8 @@ body::-webkit-scrollbar {
 }
 
 .second {
-  background-image: url(/assets/images/second-background.jpg);
+  /* background-image: url(/assets/images/second-background.jpg); */
+  background-color: black;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; /* Center the image */

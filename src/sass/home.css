@@ -75,17 +75,3 @@ body::-webkit-scrollbar {
   background-position: center; /* Center the image */
   background-size: cover;
 }
-
-#gsap-marker-start
-  #gsap-marker-end
-  #gsap-marker-scroller-start
-  #gsap-marker-scroller-end {
-  display: none !important;
-}
-
-.gsap-marker-start
-  .gsap-marker-end
-  .gsap-marker-scroller-start
-  .gsap-marker-scroller-end {
-  display: none !important;
-}

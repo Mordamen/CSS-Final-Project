@@ -13,10 +13,14 @@ body {
 }
 .panel h1 {
   font-size: 1.8em;
-  color: black;
+  color: white;
   font-weight: 300;
-  margin: 0 auto;
+  margin: 2rem auto;
   z-index: 5;
+  max-width: 50rem;
+  text-align: justify;
+  position: relative;
+  right: 30rem;
 }
 
 section:not(.first) {
@@ -45,7 +49,7 @@ body::-webkit-scrollbar {
 
 .second {
   /* background-image: url(/assets/images/second-background.jpg); */
-  background-color: black;
+  background-color: #fdf8e5;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center; /* Center the image */

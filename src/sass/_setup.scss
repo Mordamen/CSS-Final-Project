@@ -19,7 +19,6 @@ body {
   color: #5b595c;
   font-family: Arial;
   background: #fdf8e5;
-  background: #fdf8e5;
   font-size: 1em;
 }
 
@@ -79,26 +78,9 @@ hr:after {
 }
 
 .wrapper {
-  max-width: 50rem;
+  max-width: 100rem;
   margin-inline: auto;
   padding-inline: 1rem;
-}
-
-.diagonal {
-  --skew-angle: -5deg;
-  --background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);
-
-  position: relative;
-  isolation: isolate;
-}
-
-.diagonal::after {
-  content: "";
-  background: var(--background);
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  transform: skewY(var(--skew-angle));
 }
 
 .clearfix:before {

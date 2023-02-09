@@ -1,4 +1,4 @@
-const insertHeader = document.querySelector("header");
+const insertHeader = document.querySelector("#header");
 
 function insertHeading() {
   insertHeader.innerHTML = `
@@ -51,7 +51,7 @@ function insertHeading() {
 
 window.onload = insertHeading();
 
-document.querySelector("header").innerHTML = `<header>
+document.querySelector(".header").innerHTML = `<header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <button

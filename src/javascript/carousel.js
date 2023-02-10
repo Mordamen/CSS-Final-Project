@@ -1,7 +1,5 @@
 // Initialise Carousel
-var root = document.querySelector("#logoCarousel");
-while (typeof root == "undefined") {}
-const logoCarousel = new Carousel(root, {
+const logoCarousel = new Carousel(document.querySelector("#logoCarousel"), {
   friction: 0.83,
   Dots: false,
   on: {

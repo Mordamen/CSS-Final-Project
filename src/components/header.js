@@ -1,5 +1,5 @@
 $(window).on("load", function () {
-  const insertHeader = document.querySelector("#header");
+  const insertHeader = document.querySelector(".header");
 
   function insertHeading() {
     insertHeader.innerHTML = `

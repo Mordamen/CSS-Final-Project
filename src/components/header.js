@@ -1,8 +1,7 @@
-$(window).on("load", function () {
-  const insertHeader = document.querySelector(".header");
+const insertHeader = document.querySelector(".header");
 
-  function insertHeading() {
-    insertHeader.innerHTML = `
+function insertHeading() {
+  insertHeader.innerHTML = `
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
@@ -48,7 +47,10 @@ $(window).on("load", function () {
     </nav>
   </header>
 `;
-  }
+}
+
+$(window).on("load", function () {
+  insertHeading();
 });
 
 // window.onload = insertHeading();

@@ -18,31 +18,24 @@ function insertHeading() {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="index.html" id="nav-home-link">
-              Home
-            </a>
-            <a class="nav-link" href="about.html" id="nav-aboutus-link">
-              About Us
-            </a>
-            <a class="nav-link" href="media.html" id="nav-media-link">
-              Media
-            </a>
-            <a class="nav-link" href="faq.html" id="nav-faq-link">
-              FAQ
-            </a>
-            <a class="nav-link" href="contact.html" id="nav-contactus-link">
-              Contact Us
-            </a>
+            <a class="nav-link" href="index.html" id="nav-home-link">Home</a>
+            <a class="nav-link" href="about.html" id="nav-aboutus-link"
+              >About Us</a
+            >
+            <a class="nav-link" href="media.html" id="nav-media-link">Media</a>
+            <a class="nav-link" href="faq.html" id="nav-faq-link">FAQ</a>
+            <a class="nav-link" href="contact.html" id="nav-contactus-link"
+              >Contact Us</a
+            >
           </div>
         </div>
-        <a class="navbar-brand" href="index.html" id="logo">
-          <img
+        <a class="navbar-brand" href="index.html" id="logo"
+          ><img
             src="/assets/images/navbarIcon.webp"
             alt="Bootstrap"
             width="281"
             height="91"
-          />
-        </a>
+        /></a>
       </div>
     </nav>
   </header>
